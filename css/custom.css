@@ -9,3 +9,9 @@
 /* ----------------------------------------------------
 	You can put your custom css code here: 
 -------------------------------------------------------*/
+
+.construction_list li{
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 10px 0px;
+}

@@ -58,7 +58,7 @@
     color: #fdfdfd;
     font-size: 66px;
     font-weight: 800;
-    line-height: 55px;
+    /* line-height: 55px; */
     margin-top: 24px;
 }
 .slider__inner p {

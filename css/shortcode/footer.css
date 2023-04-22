@@ -19,9 +19,9 @@
 	Footer Default
 ------------------------------*/
 
-.htc__footer__wrap{
-	position: relative;
-	z-index: 2;
+.htc__footer__wrap {
+    position: relative;
+    z-index: 2;
 }
 
 .ht__address__inner {
@@ -33,28 +33,30 @@
     font-weight: 500;
 }
 .ht__address__icon i {
-  border: 1px solid #fafafa;
-  border-radius: 100%;
-  color: #fafafa;
-  font-size: 24px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  transition: all 0.4s ease 0s;
-  width: 45px;
+    border: 1px solid #fafafa;
+    border-radius: 100%;
+    color: #fafafa;
+    font-size: 24px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    width: 45px;
 }
 
 .ht__address__icon.map-pin i {
-  line-height: 43px;
+    line-height: 43px;
 }
 
-
 .ht__address__icon.glob i {
-  line-height: 43px;
+    line-height: 43px;
 }
 
 .ht__address__details {
-  margin-top: -2px;
+    /* margin-top: -2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .htc__contact__address {
     padding: 56px 0;
@@ -69,8 +71,8 @@
     color: #fff;
 }
 .htc__contact__wrap {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .ft__title {
@@ -92,8 +94,8 @@
     font-size: 14px;
     transition: 0.4s;
 }
-.ft__menu li a:hover{
-	color: #fcc236;
+.ft__menu li a:hover {
+    color: #fcc236;
 }
 .footer__link ul.ft__menu + ul.ft__menu {
     margin-left: 30px;
@@ -134,20 +136,6 @@
     color: #fff;
 }
 .footer.quick__link {
-  left: 67px;
-  position: relative;
+    left: 67px;
+    position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

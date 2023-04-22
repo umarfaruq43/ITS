@@ -589,8 +589,8 @@
   margin-right: 25px;
 }
 .slider__inner h1 {
-  font-size: 49px;
-  line-height: 60px;
+  font-size: 29px;
+  /* line-height: 70px; */
 }
 .slider__fixed--height {
   height: 100vh;
@@ -859,8 +859,8 @@ blockquote {
   padding: 0;
 }
 .slider__inner h1 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  /* line-height: 30px; */
   margin-top: 10px;
 }
 .slider__inner h4 {
