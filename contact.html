@@ -182,20 +182,24 @@
                         <div class="htc__contact__form__wrap">
                             <h2 class="title__line--5">SEND US A MESSAGE</h2>
                             <div class="contact-form-wrap">
-                                <form id="contact-form" action="#" method="post">
+                                <form id="myForm">
                                     <div class="single-contact-inner">
                                         <div class="single-contact-form">
                                             <div class="contact-box name">
                                                 <span>Your Name*</span>
-                                                <input type="text" name="name">
+                                                <input type="text" name="name" required>
                                             </div>
                                             <div class="contact-box email">
                                                 <span>Your Email*</span>
-                                                <input type="email" name="email">
+                                                <input type="email" name="email" required>
                                             </div>
                                             <div class="contact-box subject">
                                                 <span>Subject*</span>
-                                                <input type="text" name="subject">
+                                                <input type="text" name="subject" required>
+                                            </div>
+                                            <div class="contact-box subject">
+                                                <span>Phone*</span>
+                                                <input type="number" name="phone" required>
                                             </div>
                                         </div>
                                         <div class="single-contact-form">
@@ -204,7 +208,9 @@
                                                 <textarea name="message"></textarea>
                                             </div>
                                             <div class="contact-btn">
-                                                <button type="submit" class="htc__btn btn--theme">SEND NOW</button>
+                                                <button type="btn" id="submitButton" class="htc__btn btn--theme"
+                                                    onclick="submitForm(event)">SEND
+                                                    NOW</button>
                                             </div>
                                         </div>
                                     </div>

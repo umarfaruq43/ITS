@@ -251,3 +251,88 @@ $(document).ready(function () {
         $("#modal").css("display", "none");
     });
 });
+
+const submitButton = document.getElementById("submitButton");
+// const submitForm = document.getElementById("myForm");
+// submitForm.addEventListener("submit", submitForm);
+
+// function submitForm(event) {
+
+//     event.preventDefault();
+//     submitButton.disabled = true;
+//     submitButton.innerHTML = "Submitting...";
+//     const form = document.getElementById("myForm");
+//     const data = new URLSearchParams();
+//     data.append("name", form.elements["name"].value);
+//     data.append("subject", form.elements["subject"].value);
+//     data.append("phoneNumber", form.elements["phone"].value);
+//     data.append("message", form.elements["message"].value);
+//     data.append("userEmail", form.elements["email"].value);
+
+//     fetch("https://nodemailerf.onrender.com/submit", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/x-www-form-urlencoded",
+//         },
+//         body: data.toString(),
+//         mode: "no-cors",
+//     })
+//         .then((response) => {
+//             console.log(response);
+//             alert("Your message have been sent Succesfully");
+//             // do something with the response, like show a success message
+//             submitButton.disabled = false;
+//             submitButton.innerHTML = "SEND NOW";
+//             form.reset();
+//         })
+//         .catch((error) => {
+//             console.error(error);
+//             // do something with the error, like show an error message
+//         });
+// }
+
+function submitForm(event) {
+    event.preventDefault();
+    const form = document.getElementById("myForm");
+    const name = form.elements["name"].value;
+    const subject = form.elements["subject"].value;
+    const phone = form.elements["phone"].value;
+    const message = form.elements["message"].value;
+    const email = form.elements["email"].value;
+
+    if (!name || !subject || !phone || !message || !email) {
+        // If any field is empty, do not submit the form
+        alert("Please fill out all fields before submitting the form");
+        return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Submitting...";
+    const data = new URLSearchParams();
+    data.append("name", name);
+    data.append("subject", subject);
+    data.append("phoneNumber", phone);
+    data.append("message", message);
+    data.append("userEmail", email);
+
+    fetch("https://nodemailerf.onrender.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: data.toString(),
+        mode: "no-cors",
+    })
+        .then((response) => {
+            console.log(response);
+            alert("Your message has been sent successfully");
+            // do something with the response, like show a success message
+            submitButton.disabled = false;
+            submitButton.innerHTML = "SEND NOW";
+            form.reset();
+        })
+        .catch((error) => {
+            console.error(error);
+            // do something with the error, like show an error message
+        });
+}
