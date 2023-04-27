@@ -473,21 +473,22 @@
                                 expertise, quality service, and cost-effective solutions can
                                 help you achieve your construction goals</p>
                         </div>
-                        <form id="contact-form" action="" method="POST">
+                        <form id="myForm" action="" method="POST">
                             <div class="clint__comment__form">
                                 <div class="single__cl__form">
                                     <input name="name" type="text" placeholder="Name">
                                     <input name="email" type="email" placeholder="Email">
                                 </div>
                                 <div class="single__cl__form">
-                                    <input name="telephone" type="tel" placeholder="Phone">
+                                    <input name="phone" type="tel" placeholder="Phone">
                                     <input name="subject" type="text" placeholder="Subject">
                                 </div>
                                 <div class="single__cl__message">
                                     <textarea name="message" placeholder="Message"></textarea>
                                 </div>
                                 <div class="clint__submit__btn">
-                                    <button class="submit htc__btn" type="submit">
+                                    <button class="submit htc__btn" type="button" onclick="submitForm(event)"
+                                        id="submitButton">
                                         SEND MESSAGE
                                     </button>
                                 </div>
